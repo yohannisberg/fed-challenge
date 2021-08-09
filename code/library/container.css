@@ -1,3 +1,288 @@
+/*Global JD*/
+h1 {
+  font-family: Merriweather;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: Lato !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-family: Lato !important;
+  font-style: normal;
+  font-weight: normal;
+  color: #808080;
+  line-height: 1.2;
+}
+
+p {
+  color: #555555;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.button {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  background: #54AA7D;
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+
+.green {
+  color: #489467;
+  font-weight: 700; 
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/*Hero JD*/
+.hero {
+  background: #E0F1E9;
+}
+
+.hero h1 {
+  margin: 15px 0;
+}
+
+.hero p {
+  margin: 0 0 45px 0;
+}
+
+.hero .container {
+  padding: 35px 0 55px 0;
+}
+
+.hero .container .logo-wrapper {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.hero .container .logo-wrapper {
+  max-width: 90px;
+}
+
+.hero .container .hero-contents-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero .container .hero-contents-wrapper .content {
+  width: 50%;
+}
+
+.hero .container .hero-contents-wrapper .copy-wrap{
+  max-width: 390px;
+}
+
+.hero .container .hero-contents-wrapper .img-wrap img {
+  width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .hero .container {
+    padding: 35px 0 40px 0;
+  }
+
+  .hero .container .hero-contents-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  } 
+  .hero .container .hero-contents-wrapper .content {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .hero .container .hero-contents-wrapper .copy-wrap{
+    text-align: center;
+  }
+
+  .hero .container .hero-contents-wrapper .img-wrap img {
+    max-width: 320px;
+  }
+}
+
+/*Page - Cards JD*/
+.page {
+
+}
+
+.page .container {
+  padding: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page .card {
+  width: 30%;
+  border-radius: 5px;
+  box-shadow:0 0 10px #dadada;
+  margin-bottom: 55px;
+  text-decoration: none;
+
+  /*Hover animation styles*/
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.card:hover, .card:focus, .card:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.03);
+}
+
+.page .card .img-wrap {
+  background-image: linear-gradient(to right, #2B2B2B , #181818);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px 3px 0 0;
+}
+
+.page .card .img-wrap img {
+  max-width: 65px;
+  margin: 40px auto;
+}
+
+.page .card .txt-wrap {
+  padding: 0 20px 35px 20px;
+}
+
+.page .card .txt-wrap h2 {
+  margin: 20px 0 12px 0;
+  color: #000000;
+}
+
+.page .card .txt-wrap p {
+  margin: 0;
+}
+
+@media all and (max-width: 768px) {
+  .page .card {
+    width: 48%;
+  }
+  .page .container {
+    padding: 70px 0 30px 0;
+  }
+}
+
+@media all and (max-width: 499px) {
+  .page .card .txt-wrap {
+    text-align: center
+  }
+
+  .page .card {
+    width: 100%;
+  }
+}
+
+/*Bottom JD*/
+.bottom {
+
+}
+
+.bottom .container {
+
+}
+
+.bottom .container .txt-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.bottom .container .copy {
+  width: 50%;
+  text-align: center;
+}
+
+.bottom .container .copy h4 {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 230px;
+}
+
+.bottom .container .img-wrap {
+  width: 100%;
+}
+.bottom .container .img-wrap img {
+  width: 100%;
+  display: block;
+}
+
+@media all and (max-width: 768px) {
+  .bottom .container .txt-wrap {
+    flex-direction: column;
+  }
+
+  .bottom .container .copy {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .bottom .container .copy h4 {
+    max-width: 320px;
+  }
+}
+
+/*Footer JD*/
+.footer {
+  background: #202329;
+  width: 100%;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.footer .container img {
+  max-width: 62px;
+}
+
+.footer .container p {
+  color: #5B5B5D;
+  margin: 0 0 0 15px;
+  font-size: .8rem;
+}
+
+@media all and (max-width: 768px) {
+  .footer .container p {
+    font-size: .7rem;
+  }
+}
+
 /*
   This is to help make development easier by including a responsive container
 */
@@ -6,7 +291,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* Small Monitor */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
